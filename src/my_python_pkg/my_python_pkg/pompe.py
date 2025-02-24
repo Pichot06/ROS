@@ -5,28 +5,30 @@ from std_msgs.msg import String
 
 class PompeSubscriber(Node):
     def __init__(self):
-        super().__init__('pompe')  # Nom du nœud
+        super().__init__('pompe')  
         self.subscription = self.create_subscription(
             String,
             'humidite_sol',
             self.listener_callback,
             10)
-        self.subscription  # Empêche la suppression automatique de la souscription
-        self.pompe_active = False  # État initial de la pompe (éteinte)
+        self.subscription  
+        self.pompe_active = False  # État initial 
 
     def listener_callback(self, msg):
         try:
             humidite_sol = float(msg.data.split(': ')[1].replace('%', ''))  # Extraction de la valeur
+        except ValueError:
+            self.get_logger().error('Erreur de lecture des données !')
             return
 
-        # Logique d'activation/désactivation de la pompe si - 20% activ la pompe jusqu'a 60%
+        # Logique d'activation/désactivation de la pompe
         if humidite_sol < 20.0 and not self.pompe_active:
             self.pompe_active = True
-            self.get_logger().info('Pompe ACTIVÉE - Arrosage en cours...')
+            self.get_logger().info('Pompe ACTIVÉE ')
 
         elif humidite_sol >= 60.0 and self.pompe_active:
             self.pompe_active = False
-            self.get_logger().info('Pompe DÉSACTIVÉE - Sol suffisamment humide.')
+            self.get_logger().info('Pompe DÉSACTIVÉE')
 
         # Affichage de l'état actuel de la pompe
         etat_pompe = "EN MARCHE" if self.pompe_active else "ARRÊTÉE"
