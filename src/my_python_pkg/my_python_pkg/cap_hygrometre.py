@@ -6,11 +6,11 @@ import random
 class MinimalPublisher(Node):
 
     def __init__(self):
-        super().__init__('cap_hygrometre')  # Nom du nœud
+        super().__init__('cap_hygrometre')  
         self.publisher_ = self.create_publisher(String, 'humidite_sol', 10)
         timer_period = 0.5  # Publication toutes les 0.5 secondes
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.humidite_actuelle = 22.0  # Valeur initiale de l'humidité du sol en %
+        self.humidite_actuelle = 22.0  # Valeur initiale
 
     def timer_callback(self):
 

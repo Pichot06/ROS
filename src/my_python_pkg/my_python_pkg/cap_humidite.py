@@ -4,14 +4,13 @@ from std_msgs.msg import String
 import random
 
 class MinimalPublisher(Node):
-    """Nœud ROS2 qui publie un taux d'humidité ambiante réaliste avec variations limitées"""
 
     def __init__(self):
         super().__init__('capteur_humidite')  # Nom du oeud
         self.publisher_ = self.create_publisher(String, 'humidite_ambiante', 10)
         timer_period = 0.5  # Publication toutes les 0.5 secondes
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.humidite_actuelle = 50.0  # Valeur initiale de l'humidité ambiante en %
+        self.humidite_actuelle = 50.0  # Valeur initiale
 
     def timer_callback(self):
         """Génère un pourcentage d'humidité ambiante avec une fluctuation réaliste (±0.3%)"""

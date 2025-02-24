@@ -6,13 +6,12 @@ import random
 class CapteurTemperature(Node):
 
     def __init__(self):
-        super().__init__('cap_temp')  # Nom du nœud
+        super().__init__('cap_temp') 
         self.publisher_ = self.create_publisher(String, 'temperature', 10)
         self.timer = self.create_timer(0.5, self.envoyer_temperature)
         self.temperature_actuelle = 22.0  # Température initiale
 
     def envoyer_temperature(self):
-        """Génère une température avec une fluctuation réaliste (±0.3°C max)"""
         variation = random.uniform(-0.3, 0.3)  # Variation contrôlée
         self.temperature_actuelle += variation
         self.temperature_actuelle = round(self.temperature_actuelle, 1)  # Arrondi à 1 décimale

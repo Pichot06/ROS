@@ -1,26 +1,24 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
-import random  # Pour simuler le changement de niveau d'eau
+import random  
 
 class FlotteurPublisher(Node):
 
     def __init__(self):
-        super().__init__('flotteur')  # Nom du nœud
-        self.publisher_ = self.create_publisher(Int32, 'niveau_eau', 10)
-        self.timer = self.create_timer(2.0, self.envoyer_niveau_eau)  # Publication toutes les 2 secondes
+        super().__init__('flotteur') 
+        self.publisher_ = self.create_publisher(Int32, 'niveau_eau', 10) #un int car un capteur TOR
+        self.timer = self.create_timer(0.5, self.envoyer_niveau_eau)  # Publication toutes les 0.5 secondes
         self.niveau_actuel = random.choice([0, 1])  # Niveau initial (0 ou 1)
 
     def envoyer_niveau_eau(self):
-        # Simule une fluctuation du niveau d'eau (change parfois)
-        if random.random() < 0.3:  # 30% de chance que le niveau change
-            self.niveau_actuel = 1 if self.niveau_actuel == 0 else 0
+        self.niveau_actuel = random.random()
 
         msg = Int32()
         msg.data = self.niveau_actuel
         self.publisher_.publish(msg)
 
-        etat = "🛑 PAS ASSEZ D'EAU (0)" if self.niveau_actuel == 0 else "✅ NIVEAU OK (1)"
+        etat = "manque eau" if self.niveau_actuel == 0 else "eau ok"
         self.get_logger().info(f'Publication de l état du flotteur: {etat}')
 
 def main():

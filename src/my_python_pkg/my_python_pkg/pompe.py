@@ -15,14 +15,11 @@ class PompeSubscriber(Node):
         self.pompe_active = False  # État initial de la pompe (éteinte)
 
     def listener_callback(self, msg):
-        """Réagit aux variations d'humidité du sol et active/désactive la pompe"""
         try:
             humidite_sol = float(msg.data.split(': ')[1].replace('%', ''))  # Extraction de la valeur
-        except ValueError:
-            self.get_logger().error('Erreur de lecture des données !')
             return
 
-        # Logique d'activation/désactivation de la pompe
+        # Logique d'activation/désactivation de la pompe si - 20% activ la pompe jusqu'a 60%
         if humidite_sol < 20.0 and not self.pompe_active:
             self.pompe_active = True
             self.get_logger().info('Pompe ACTIVÉE - Arrosage en cours...')
