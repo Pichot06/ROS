@@ -1,0 +1,58 @@
+[0.469s] Invoking command in '/home/pichot/ros2_ws/src/my_python_pkg': PYTHONPATH=/home/pichot/ros2_ws/build/my_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/pichot/ros2_ws/build/my_python_pkg/build install --record /home/pichot/ros2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
+[0.597s] running egg_info
+[0.598s] creating ../../build/my_python_pkg/my_python_pkg.egg-info
+[0.598s] writing ../../build/my_python_pkg/my_python_pkg.egg-info/PKG-INFO
+[0.598s] writing dependency_links to ../../build/my_python_pkg/my_python_pkg.egg-info/dependency_links.txt
+[0.598s] writing entry points to ../../build/my_python_pkg/my_python_pkg.egg-info/entry_points.txt
+[0.598s] writing requirements to ../../build/my_python_pkg/my_python_pkg.egg-info/requires.txt
+[0.598s] writing top-level names to ../../build/my_python_pkg/my_python_pkg.egg-info/top_level.txt
+[0.598s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.599s] reading manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.600s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.600s] running build
+[0.600s] running build_py
+[0.601s] creating /home/pichot/ros2_ws/build/my_python_pkg/build
+[0.601s] creating /home/pichot/ros2_ws/build/my_python_pkg/build/lib
+[0.601s] creating /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/flotteur.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/cap_temp.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/cap_co2.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/__init__.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/buzzer.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/cap_hygrometre.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/my_node.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/pompe.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] copying my_python_pkg/cap_humidite.py -> /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.601s] running install
+[0.601s] running install_lib
+[0.601s] creating /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.602s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/flotteur.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.602s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/cap_temp.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.602s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/cap_co2.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.602s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/__init__.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.602s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/buzzer.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.603s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/cap_hygrometre.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.603s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/my_node.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.603s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/pompe.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.603s] copying /home/pichot/ros2_ws/build/my_python_pkg/build/lib/my_python_pkg/cap_humidite.py -> /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.603s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/flotteur.py to flotteur.cpython-310.pyc
+[0.603s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/cap_temp.py to cap_temp.cpython-310.pyc
+[0.603s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/cap_co2.py to cap_co2.cpython-310.pyc
+[0.604s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/__init__.py to __init__.cpython-310.pyc
+[0.604s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/buzzer.py to buzzer.cpython-310.pyc
+[0.604s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/cap_hygrometre.py to cap_hygrometre.cpython-310.pyc
+[0.604s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/my_node.py to my_node.cpython-310.pyc
+[0.604s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/pompe.py to pompe.cpython-310.pyc
+[0.605s] byte-compiling /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/cap_humidite.py to cap_humidite.cpython-310.pyc
+[0.605s] running install_data
+[0.605s] creating /home/pichot/ros2_ws/install/my_python_pkg/share/ament_index
+[0.605s] creating /home/pichot/ros2_ws/install/my_python_pkg/share/ament_index/resource_index
+[0.605s] creating /home/pichot/ros2_ws/install/my_python_pkg/share/ament_index/resource_index/packages
+[0.605s] copying resource/my_python_pkg -> /home/pichot/ros2_ws/install/my_python_pkg/share/ament_index/resource_index/packages
+[0.605s] copying package.xml -> /home/pichot/ros2_ws/install/my_python_pkg/share/my_python_pkg
+[0.606s] running install_egg_info
+[0.607s] Copying ../../build/my_python_pkg/my_python_pkg.egg-info to /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info
+[0.607s] running install_scripts
+[0.619s] Installing my_node script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.619s] writing list of installed files to '/home/pichot/ros2_ws/build/my_python_pkg/install.log'
+[0.633s] Invoked command in '/home/pichot/ros2_ws/src/my_python_pkg' returned '0': PYTHONPATH=/home/pichot/ros2_ws/build/my_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/pichot/ros2_ws/build/my_python_pkg/build install --record /home/pichot/ros2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data

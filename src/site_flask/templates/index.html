@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capteurs</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <h1>données en temps réel</h1>
+    <p>Température: <span id="temperature">marche pas</span></p>
+    <p>Humidité ambiantee: <span id="humidite_ambiante">marche pas</span></p>
+    <p>Humidité Sol: <span id="humidite_sol">marche pas</span></p>
+    <p>CO2: <span id="co2">marche pas</span></p>
+    <p>Niveau Eau: <span id="niveau_eau">marche pas</span></p>
+
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log("connect");
+        });
+
+        socket.on('maj', function(data) {
+            document.getElementById('temperature').innerText = data.temperature ;
+            document.getElementById('humidite_ambiante').innerText = data.humidite_ambiante ;
+            document.getElementById('humidite_sol').innerText = data.humidite_sol ;
+            document.getElementById('co2').innerText = data.cap_co2 ;
+            document.getElementById('niveau_eau').innerText = data.niveau_eau;
+
+        });
+    </script>
+</body>
+</html>

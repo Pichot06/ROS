@@ -1,0 +1,24 @@
+[0.570s] Invoking command in '/home/pichot/ros2_ws/build/my_python_pkg': PYTHONPATH=/home/pichot/ros2_ws/build/my_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pichot/ros2_ws/build/my_python_pkg/build --no-deps
+[0.790s] running develop
+[0.935s] running egg_info
+[0.935s] writing my_python_pkg.egg-info/PKG-INFO
+[0.935s] writing dependency_links to my_python_pkg.egg-info/dependency_links.txt
+[0.935s] writing entry points to my_python_pkg.egg-info/entry_points.txt
+[0.935s] writing requirements to my_python_pkg.egg-info/requires.txt
+[0.935s] writing top-level names to my_python_pkg.egg-info/top_level.txt
+[0.936s] reading manifest file 'my_python_pkg.egg-info/SOURCES.txt'
+[0.937s] writing manifest file 'my_python_pkg.egg-info/SOURCES.txt'
+[0.939s] running build_ext
+[0.939s] Creating /home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages/my-python-pkg.egg-link (link to .)
+[0.940s] Installing buzzer script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing cap_co2 script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing cap_humidite script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing cap_hygrometre script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing cap_temp script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing flask script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing flotteur script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing my_node script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] Installing pompe script to /home/pichot/ros2_ws/install/my_python_pkg/lib/my_python_pkg
+[0.941s] 
+[0.941s] Installed /home/pichot/ros2_ws/build/my_python_pkg
+[0.973s] Invoked command in '/home/pichot/ros2_ws/build/my_python_pkg' returned '0': PYTHONPATH=/home/pichot/ros2_ws/build/my_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pichot/ros2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pichot/ros2_ws/build/my_python_pkg/build --no-deps
