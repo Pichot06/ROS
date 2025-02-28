@@ -21,7 +21,7 @@ class MinimalPublisher(Node):
         msg = String()
         msg.data = f'Humidité ambiante: {self.humidite_actuelle}%'
         self.publisher_.publish(msg)
-        self.get_logger().info(f'📡 Publication: {msg.data}')
+        self.get_logger().info(f'Publication: {msg.data}')
 
 def main():
     rclpy.init()
