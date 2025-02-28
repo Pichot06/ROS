@@ -26,7 +26,7 @@ class BuzzerSubscriber(Node):
             self.get_logger().info('assez d eau')
 
         # Affichage de l'état actuel du buzzer
-        etat_buzzer = "SONNE" if self.buzzer_actif else "SILENCE 🔇"
+        etat_buzzer = "SONNE" if self.buzzer_actif else "chut"
         self.get_logger().info(f'État du buzzer: {etat_buzzer} | Niveau d’eau: {niveau_eau}')
 
 def main():
